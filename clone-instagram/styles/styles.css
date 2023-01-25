@@ -1,0 +1,251 @@
+/* geral */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+@media (min-width: 1680px) {
+	footer{
+		position: absolute;
+		bottom: 10px;
+	}
+}
+
+@media (max-width: 875px){
+	aside{
+		display: none;
+	}
+}
+@media (max-width: 185px){
+	#instagram{
+		width: 120px;
+	}
+	#gp, #as{
+		height: 25px;
+	}
+}
+@media (max-width: 129px){
+	#instagram{
+		width: 90px;
+	}
+	#gp, #as{
+		height: 20px;
+	}
+}
+@media (max-width: 100px) {
+	body{
+		display: none;
+	}
+}
+
+@keyframes screen-phone{
+	23%{
+		background-image: url('../img/imagem_cel_interior.jpg');
+	}
+	33%{
+		background-image: url('../img/imagem_cel_interior-1.jpg');
+	}
+	56%{
+		background-image: url('../img/imagem_cel_interior-1.jpg');
+	}
+	66%{
+		background-image: url('../img/imagem_cel_interior-2.jpg');
+	}
+	90%{
+		background-image: url('../img/imagem_cel_interior-2.jpg');
+	}
+	100%{
+		background-image: url('../img/imagem_cel_interior.jpg');
+	}
+}
+
+*{
+	font-family: 'Roboto', Helvetica, Arial, sans-serif;
+}
+
+body, h1, h2, h3, p, input{
+	padding: 0;
+	margin: 0;
+}
+body{
+	background-color: rgb(250, 250, 250);
+}
+
+/* Aside */
+aside{
+	margin: 0 35px 0 0;
+	position: relative;
+}
+aside img{
+	width: 375px;
+}
+
+.slide-image{
+	position: absolute;
+	top: 27px;
+	height: 530px;
+	left: 109px;
+	right: 17px;
+	border-radius: 20px;
+	background-image: url('../img/imagem_cel_interior.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	animation-name: screen-phone;
+	animation-duration: 15s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+
+/* Main */
+.container{
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	margin: 50px 0;
+	justify-content: center;
+}
+main{
+	width: 350px;
+}
+.box{
+	position: relative;
+	width: 100%;
+	border: 1px solid #CBCBCB;
+	background-color: rgb(255, 255, 255);
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+}
+
+.box--2{
+	display: flex;
+	height: 60px;
+	text-align: center;
+	padding: 0;
+	align-items: center;
+	justify-content: center;
+}
+
+#instagram{
+	display: block;
+	max-width: 180px;
+	margin: 40px auto;
+}
+#gp, #as{
+	max-height: 40px;
+}
+form{
+	padding-bottom: 20px;
+	border-bottom: 1px solid #CBCBCB;
+	width: 75%;
+	margin: 0 auto 40px;
+}
+input{
+	display: block;
+	border: none;
+	box-shadow: 0 0 0 1px #CBCBCB;
+	border-radius: 2px;
+	width: calc(100% - 10px);	
+	height: 37px;
+	margin: 10px 0;
+	background-color: rgb(250, 250, 250);
+	padding-left: 10px;
+	font-size: 12px;
+}
+input:focus{
+	outline: none;
+	box-shadow: 0 0 0 1px #8F8F8F;
+}
+
+input[type=submit]{
+	height: 30px;
+	background-color: #4DB5F9;
+	color: #fff;
+	font-size: 15px;
+	font-weight: bold;
+	box-shadow: 0 0 0 1px #4DB5F9;
+	border-radius: 8px;
+	margin-top: 20px;
+	width: 100%;
+}
+input[type=submit]:hover{
+	cursor: pointer;
+}
+.or{
+	font-size: 15px;
+	position: absolute;
+	right: 50%;
+	transform: translateX(50%);
+	margin: auto;
+	top: 288px;
+	padding: 0px 20px;
+	background-color: #fff;
+	color: #A2A2A2;
+}
+.facebook-login, .restore-pass{
+	display: block;
+	color: #3C5A99;
+	text-decoration: none;
+	text-align: center;
+	margin: 0 auto 10px 0;
+}
+.facebook-login .fab{
+	margin: 4px;
+}
+.facebook-login{
+	font-weight: bold;
+}
+.restore-pass{
+	font-size: 12px;
+	color: #28447F;
+}
+.box--2 p{
+	
+}
+.box--2 p a{
+	text-decoration: none;
+	color: #0095f6;
+	font-weight: 700;
+}
+
+.app-links{
+	display: flex;
+	flex-wrap: wrap;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	padding: 10px;
+}
+.app-links p{
+	padding-bottom: 10px;
+	width: 100%;
+}
+.app-links img{
+	margin: 2px;
+}
+
+/* footer */
+footer{
+	width: 100%;
+	text-align: center;
+	margin-top: 40px;
+}
+footer span ul{
+	font-size: 12px;
+}
+footer span ul li{
+	display: inline-block;
+	margin: 0 10px 15px 0;
+	color: #8e8e8e;
+}
+footer span ul li a{
+	text-decoration: none;
+	color: #8e8e8e;
+}
+.item-hover:hover{
+	text-decoration: underline;
+}
+footer span ul li:last-child{
+	display: block;
+}
+footer span ul li span{
+	margin-left: 10px;
+}
